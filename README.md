@@ -6,8 +6,7 @@
 #include <windows.h>
 using namespace std;
 
-class OTHERS
-{
+class OTHERS {
 public:
     void newAccount();
     void delAccount();
@@ -18,8 +17,7 @@ public:
     void options();
 };
 
-void OTHERS::newAccount()
-{
+void OTHERS::newAccount() {
     //--------------------------------STARTS--------------------------------
     string name, c_name;
     int age = 0;
@@ -63,8 +61,7 @@ void OTHERS::newAccount()
     //--------------------------------ENDS--------------------------------
 }
 
-void OTHERS::delAccount()
-{
+void OTHERS::delAccount() {
     //--------------------------------STARTS--------------------------------
     fstream Myfile;
     fstream temp;
@@ -105,8 +102,7 @@ void OTHERS::delAccount()
     //--------------------------------ENDS--------------------------------
 }
 
-void OTHERS::update()
-{
+void OTHERS::update() {
     //--------------------------------STARTS--------------------------------
     fstream Myfile;
     fstream temp1;
@@ -165,8 +161,7 @@ void OTHERS::update()
     //--------------------------------ENDS--------------------------------
 }
 
-void OTHERS::search_acc()
-{
+void OTHERS::search_acc() {
     //--------------------------------STARTS--------------------------------
     string srch;
     string line;
@@ -210,8 +205,7 @@ void OTHERS::search_acc()
 }
 
 
-void OTHERS::showAll()
-{
+void OTHERS::showAll() {
     //--------------------------------STARTS--------------------------------
     string srch;
     string line;
@@ -239,13 +233,11 @@ void OTHERS::showAll()
     //--------------------------------ENDS--------------------------------
 }
 
-void OTHERS::Exit()
-{
+void OTHERS::Exit() {
     exit(0);
 }
 
-void OTHERS::options()
-{
+void OTHERS::options() {
     int opt;
     cout << "\n\nChoose one option: ";
     cout << "\n1. Create New Account \n2. Delete Account \n3. Update Account \n4. Search Account \n5. All records \n6. Exit";
@@ -297,8 +289,7 @@ void OTHERS::options()
 
 //--------------------------------MAIN FUNCTION--------------------------------
 
-int main()
-{
+int main() {
     OTHERS o;
     string username = "";
     string password = "";
